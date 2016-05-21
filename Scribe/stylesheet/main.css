@@ -1,0 +1,157 @@
+body{
+  background-color: #26313b;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  text-align: center;
+}
+
+h4{
+  margin-bottom: -10px;
+}
+
+i{
+  padding: 3px;
+}
+
+.rotate:hover{
+  -webkit-animation-name: spinnerRotate;
+  -webkit-animation-duration: .5s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: spinnerRotate;
+  -moz-animation-duration: .5s;
+}
+
+.timer{
+  text-align: center;
+  font-size: 140px;
+  margin-top: 100px;
+}
+
+.milliSecond{
+  color: red;
+  font-size: 40px;
+}
+
+.time-config{
+  width: 100%;
+  text-align: center;
+}
+
+.work-control{
+  display: inline-block;
+  position: relative;
+  float: left;
+  z-index: 1;
+}
+
+.time-control{
+  display: inline-block;
+  position: relative;
+  float: right;
+  z-index: 1;
+}
+
+button, #pomodoro-time, #break-time{
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.circle-button, .circle-button:focus{
+  background-color: transparent;
+  border: 1px solid #fff;
+  font-size: 20px;
+  border-radius: 20px;
+  outline: none;
+}
+
+.round-button{
+  width: 25%;
+  margin-left: 50%;
+  margin: 0 auto;
+}
+
+.play{
+  width: 60%;
+  height: 0;
+  padding-bottom: 60%;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid white;
+  text-align: center;
+  font-size: 20px;
+  clear: both;
+}
+
+.play:hover{
+  cursor: pointer;
+  background-color: #465460;
+  transition: all 0.8s;
+}
+
+
+
+
+
+.circle{
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  line-height: 95px;
+  border: 2px solid white;
+  text-align: center;
+  font-size: 20px;
+  margin: 0 auto;
+  margin-top: 150px;
+  clear: both;
+}
+
+.circle:hover{
+  cursor: pointer;
+  background-color: #465460;
+  transition: all 0.8s;
+}
+
+.circle-restart{
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  line-height: 38px;
+  text-align: center;
+  font-size: 18px;
+  margin: 0 auto;
+  margin-top: 30px;
+  clear: both;
+  background-color: #ff4d89;
+  position: absolute;
+  display: none;
+  left: 47%;
+  transition: all .6s;
+  z-index: 2;
+}
+
+.circle-restart:hover{
+  cursor: pointer;
+  background-color: #465460;
+}
+
+@-webkit-keyframes spinnerRotate
+{
+    from{-webkit-transform:rotate(0deg);}
+    to{-webkit-transform:rotate(360deg);}
+}
+@-moz-keyframes spinnerRotate
+{
+    from{-moz-transform:rotate(0deg);}
+    to{-moz-transform:rotate(360deg);}
+}
+@-ms-keyframes spinnerRotate
+{
+    from{-ms-transform:rotate(0deg);}
+    to{-ms-transform:rotate(360deg);}
+}

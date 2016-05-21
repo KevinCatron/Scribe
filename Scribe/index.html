@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Scribe</title>
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100" rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="stylesheet/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
+
+  </head>
+  <body>
+    <!--TITLE/MAIN COUNTER-->
+    <div class="col-md-6 col-md-offset-3">
+      <h1 class="animated fadeInDown">Scribe</h1>
+        <div class="circle-restart animated fadeInDown">
+          <i class="fa fa-repeat rotate" aria-hidden="true"></i>
+        </div>
+        <div class="timer-display animated fadeInDown">
+    <p class="timer">25:00<span class="milliSecond">00</span></p>
+  </div>
+
+<!--THIS IS THE AREA WHERE YOU SET HOW LONG YOU WANT TO WORK FOR.-->
+
+    <div class="time-config">
+      <div class="work-control animated fadeInUp">
+        <h4>WORK FOR</h4>
+        <button id="pomodoro-time-down" class="circle-button" type="button">
+          <i class="fa fa-minus"></i>
+        </button>
+        <h1 id="pomodoro-time">25</h1>
+
+        <button id="pomodoro-time-up" class="circle-button" type="button">
+          <i class="fa fa-plus"></i>
+        </button>
+        <h4>MINUTES</h4>
+      </div>
+
+
+
+
+
+        <div class="time-control animated fadeInUp">
+          <h4>BREAK FOR</h4>
+          <button id="break-time-down" class="circle-button" type="button">
+            <i class="fa fa-minus"></i>
+          </button>
+
+          <h1 id="break-time">5</h1>
+
+          <button id="break-time-up" class="circle-button" type="button">
+            <i class="fa fa-plus"></i>
+          </button>
+          <h4>MINUTES</h4>
+        </div>
+      </div>
+    </div>
+
+
+<div class="container animated fadeInUp">
+  <div class="row">
+    <div class="circle start">
+      <p>START</p>
+    </div>
+
+  </div>
+</div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="functions/main.js"></script>
+
+
+
+</script>
+  </body>
+</html>
